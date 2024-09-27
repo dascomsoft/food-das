@@ -226,20 +226,7 @@ header {
                 }
             }
 
-            .title {
-                font-size: 10rem;
-                color: lightgray;
-                opacity: 0.2;
-
-                /*MEDAI QUERY*/
-                @media(max-width:520px) {
-                    font-size: 8rem;
-                }
-
-                @media(max-width:420px) {
-                    font-size: 5rem;
-                }
-            }
+          
 
             a {
                 text-decoration: none;

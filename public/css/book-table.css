@@ -182,22 +182,6 @@ header .navbar-nav .nav-link:hover::after {
     font-size: 3rem;
   }
 }
-.showcase-section .showcase-content .content .title {
-  font-size: 10rem;
-  color: lightgray;
-  opacity: 0.2;
-  /*MEDAI QUERY*/
-}
-@media (max-width: 520px) {
-  .showcase-section .showcase-content .content .title {
-    font-size: 8rem;
-  }
-}
-@media (max-width: 420px) {
-  .showcase-section .showcase-content .content .title {
-    font-size: 5rem;
-  }
-}
 .showcase-section .showcase-content .content a {
   text-decoration: none;
   color: white;

@@ -40,11 +40,11 @@ app.get('/book-table', (req , res) =>{
 
 
 
-// Route d'inscription des utilisateurs
+// Route 
 app.post('/register', (req, res) => {
     const { email, nom, telephone } = req.body;
 
-    // Vérification de l'unicité de l'email
+    // Vérification 
     const existingUser = users.find(u => u.email === email);
     if (existingUser) {
         return res.status(400).send('Email déjà utilisé');

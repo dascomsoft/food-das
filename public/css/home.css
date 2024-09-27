@@ -1239,56 +1239,6 @@ header .navbar-nav .nav-link:hover::after {
   align-items: center;
 }
 
-/*FOURNISOR-BTN*/
-.fournisor-btn .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.fournisor-btn a {
-  text-decoration: none;
-  color: white;
-}
-.fournisor-btn .btn {
-  width: 350px;
-  padding: 15px;
-  background-color: #90ee90;
-  border: 1px solid #90ee90;
-  font-weight: bold;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  color: white;
-}
-.fournisor-btn .btn:hover {
-  color: #90ee90;
-}
-.fournisor-btn .btn:hover a {
-  color: #90ee90;
-}
-.fournisor-btn .btn::after {
-  content: "";
-  background-color: white;
-  position: absolute;
-  z-index: -1;
-  left: -15%;
-  right: -15%;
-  top: 0;
-  bottom: 0;
-  transform: skewX(-45deg) scale(0, 1);
-  transition: all 0.5s;
-}
-.fournisor-btn .btn:hover::after {
-  transform: skewX(-45deg) scale(1, 1);
-  transition: all 0.5s;
-}
-.fournisor-btn .btn:active {
-  transform: translate(2px);
-  box-shadow: 0px 5px 10px rgba(225, 225, 225, 0.6);
-  color: black;
-}
-
 /*footer-section*/
 .footer-section .footer-content .section1 {
   color: white;

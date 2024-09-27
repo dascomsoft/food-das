@@ -286,7 +286,7 @@ header {
         }
 
 
-        .form {
+        form {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -308,10 +308,10 @@ header {
             }
         }
 
-        .img {
-            height: 510px;
-            border: 10px solid white;
-            object-fit: cover;
+        .img-section{
+            background-image:linear-gradient(rgba(30, 36, 61, 0.6), rgba(35, 33, 56, 0.6)), url('/images/salade.jpg');
+            background-position: center;
+            background-size: cover;
 
             /*MEDIA QUERY*/
             @media(max-width:1200px) {
@@ -323,67 +323,7 @@ header {
 }
 
 
-/*FOURNISOR-BTN*/
-.fournisor-btn {
 
-    .content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .btn {
-        width: 350px;
-        padding: 15px;
-        background-color: #90ee90;
-        border: 1px solid #90ee90;
-        font-weight: bold;
-        cursor: pointer;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        color: white;
-    }
-
-    .btn:hover {
-        color: #90ee90;
-
-        a {
-            color: #90ee90;
-        }
-    }
-
-    .btn::after {
-        content: "";
-        background-color: white;
-        position: absolute;
-        z-index: -1;
-        left: -15%;
-        right: -15%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        transition: all 0.5s;
-    }
-
-    .btn:hover::after {
-        transform: skewX(-45deg) scale(1, 1);
-        transition: all 0.5s;
-    }
-
-
-    .btn:active {
-        transform: translate(2px);
-        box-shadow: 0px 5px 10px rgba(225, 225, 225, 0.60);
-        color: black;
-    }
-
-}
 
 
 

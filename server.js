@@ -39,6 +39,24 @@ app.get('/book-table', (req , res) =>{
 })
 
 
+
+// Route d'inscription des utilisateurs
+app.post('/register', (req, res) => {
+    const { email, nom, telephone } = req.body;
+
+    // Vérification de l'unicité de l'email
+    const existingUser = users.find(u => u.email === email);
+    if (existingUser) {
+        return res.status(400).send('Email déjà utilisé');
+    }
+
+    const userId = uuidv4();
+
+    users.push({ id: userId, email, nom, telephone });
+    res.status(201).send('Utilisateur enregistré');
+});
+
+
 const port = process.env.PORT || 3000;
 
 // Start the server

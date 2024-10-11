@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "nodemon": "nodemon server",
-    "start": "node server.js"
+    "start": "node server.js" ,  
+     "build": "echo 'Building project...' && npm install"
+
   },
   "keywords": [],
   "author": "",
